@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="16.022"
+    android:viewportHeight="16.023">
+
+  <!-- E-commerce cart with wheels, in clear blue, scaled up -->
+  <path
+      android:fillColor="#2196F3"
+      android:pathData="
+        M2.5,3.0
+        H5.5
+        L8.0,10.0
+        H14.0
+        L15.5,5.5
+        H9.0
+        L7.5,2.0
+        H3.0
+        Z
+        M5.5,13.5
+        a1.5,1.5 0 1,0 3.0,0
+        a1.5,1.5 0 1,0 -3.0,0
+        M11.0,13.5
+        a1.5,1.5 0 1,0 3.0,0
+        a1.5,1.5 0 1,0 -3.0,0"/>
+</vector>

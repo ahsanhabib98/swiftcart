@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "466218411381",
+    "project_id": "swift-63672",
+    "storage_bucket": "swift-63672.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466218411381:android:82bfce0827d8db12815f3c",
+        "android_client_info": {
+          "package_name": "com.ecommerce.swift"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfPkPT9FZnTfRvROrMw-upNLuQSf3eDNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
