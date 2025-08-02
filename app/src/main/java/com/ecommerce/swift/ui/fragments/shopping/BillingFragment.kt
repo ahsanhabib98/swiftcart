@@ -32,6 +32,7 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import java.util.Locale
 
 @AndroidEntryPoint
 class BillingFragment : Fragment() {
@@ -79,8 +80,8 @@ class BillingFragment : Fragment() {
                 buttonPlaceOrder.visibility = View.GONE
             }
 
-            val price = "$${totalPrice}"
-            tvTotalPrice.text = price
+            val price = String.format(Locale.US, "%.2f", totalPrice)
+            tvTotalPrice.text = "$$price"
 
             addressAdapter.onClick = {
                 selectedAddress = it
