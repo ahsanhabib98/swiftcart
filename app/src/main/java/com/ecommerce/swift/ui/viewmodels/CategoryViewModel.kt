@@ -9,6 +9,7 @@ import com.ecommerce.swift.utils.Constants.PRODUCT_CATEGORY_FIELD
 import com.ecommerce.swift.utils.Constants.PRODUCT_COLLECTION
 import com.ecommerce.swift.utils.Resource
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -42,6 +43,7 @@ class CategoryViewModel constructor(
         firestore.collection(PRODUCT_COLLECTION)
             .whereEqualTo(PRODUCT_CATEGORY_FIELD, category.category)
             .whereNotEqualTo("offerPercentage", null)
+            .orderBy("offerPercentage", Query.Direction.DESCENDING)
             .limit(offerProductsPagingInfo.pageCount * 10)
             .get()
             .addOnSuccessListener {
